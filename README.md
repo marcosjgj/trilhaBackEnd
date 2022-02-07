@@ -19,7 +19,7 @@ c) Cite 3 exemplos de VCS:
   - CVS
 
 d) Crie um repositório no seu git pessoal “trilhaBackEnd” e utilize para entrega de todos os desafios.
-  - OK, criado e em uso
+  OK, criado e em uso
 
 
 
