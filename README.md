@@ -9,7 +9,8 @@ Repositório destinado a entrega dos desafios da trilha de Java + Spring
 
 ### <b>A)</b> Com suas palavras defina o que é um sistema de controle de versões (VCS)?
 ```
-É um sistema de controle de versões de arquivos, onde é possível manipular versões específicas ao longo do tempo.
+É um sistema de controle de versões de arquivos, onde é possível manipular versões específicas ao longo 
+do tempo.
 ```
 
 ### <b>B)</b> Cite 5 vantagens em utilizar um VCS:
