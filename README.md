@@ -34,9 +34,7 @@ do tempo.
 OK, criado e em uso
 ```
 
-<br>
 
-## <b>Desafio 2 - POO</b>
 
 
 
