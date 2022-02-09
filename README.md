@@ -29,8 +29,7 @@ do tempo.
 - CVS
 ```
 
-### <b>D)</b> Crie um repositório no seu git pessoal “trilhaBackEnd” e utilize para entrega de todos 
-os desafios.
+### <b>D)</b> Crie um repositório no seu git pessoal “trilhaBackEnd” e utilize para entrega de todos os desafios.
 ```
 OK, criado e em uso
 ```
@@ -41,19 +40,17 @@ OK, criado e em uso
 
 ### <b>A)</b> Com suas palavras defina o que é programação orientada a objetos (POO) e cite seus pilares?
 ```
-É um modelo de interação baseado no conceito de objetos que contém dados na forma de atributos, códigos e 
-códigos na forma de métodos. 
+É um modelo de interação baseado no conceito de objetos que contém dados na forma de atributos, códigos e códigos na forma de métodos. 
 
 Seus pilares são:
+- Abstração
 - Encapsulamento
 - Herança
 - Polimorfismo
-- Abstração
 ```
 ### <b>B)</b> Exemplifique e explique um cenário de abstração;
 ```java
-Abstração é uma classe que define um tipo, e não pode ser instanciada. Uma classe abstrata serve de modelo 
-para outras classes que serão extendias a ela e herdarão os atributos pré definidos.
+Abstração é uma classe que define um tipo, e não pode ser instanciada. Uma classe abstrata serve de modelo para outras classes que serão extendias a ela e herdarão os atributos pré definidos.
 
 Segue exemplo:
 
@@ -77,8 +74,7 @@ public class Gerente extends Funcionario {
 ```java
 Encapsulamento é quando resumimos um procedimento complevo em apenas um método.
 
-Ao invés de todas as vezes que eu quiser cadastrar um livro eu precisar instanciá-lo, abrir uma conexão, 
-salvar o livro e fechar a conexão, eu mudo esse procedimento de salvar para um único método.
+Ao invés de todas as vezes que eu quiser cadastrar um livro eu precisar instanciá-lo, abrir uma conexão, salvar o livro e fechar a conexão, eu mudo esse procedimento de salvar para um único método.
 
 Segue exemplo:
 
@@ -109,11 +105,60 @@ public void salvaLivro(Livro livro){
 ```
 
 
+### <b>D)</b> Exemplifique e explique um cenário de herança;
+```java
+Herança é quando criamos uma classe herdando caracteristicas de outras ja existentes, porém podemos adicionar mais atributos além dos herdados.
 
+Segue exemplo:
 
+public class Funcionario {
+    private String nome;
+    private String cpf;
+    private double salario;
+}
 
+public class Gerente extends Funcionario {
+    private int senha;
+    private int numeroDeFuncionariosGerenciados;
+}
 
+public class TestaGerente {
+    public static void main(String[] args) {
+        Gerente gerente = new Gerente();
 
+        // podemos chamar métodos do Funcionario:
+        gerente.setNome("Marcos João");
+
+        // e também métodos do Gerente!
+        gerente.setSenha(4231);
+    }
+}
+```
+
+### <b>E)</b> Exemplifique e explique um cenário de polimorfismo;
+
+```java
+Polimorfismo é a propriedade de duas ou mais classes derivadas de uma mesma superclasse responderem a mesma mensagem, cada uma de uma forma diferente. Ocorre quando uma subclasse redefine um método existente na superclasse, ou seja, quando temos os métodos sobrescritos.
+
+Segue exemplo:
+
+// Superclasse Mamífero:
+locomoverSe() {
+    // A ser implementado em alguma subclasse. 
+}
+// Subclasse Macaco
+locomoverSe() {
+     pulandoDeGalhoEmGalho; 
+}
+// Subclasse Homem:
+locomoverSe() {
+    andando; 
+}
+// Subclasse Baleia
+locomoverSe() {
+     nadando;
+}
+```
 
 
 
